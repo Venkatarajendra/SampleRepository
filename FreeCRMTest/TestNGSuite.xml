@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Free CRM Test Automation Suite" parallel="tests" thread-count="2">
+
+
+    
+	<!-- <test name="LoginTest">
+		<classes>
+			<class name="com.crm.qa.testcases.LoginPageTest" />
+			<methods>
+				<include name = "LoginTest" />
+			</methods>
+		</classes>
+	</test> -->
+	
+	<test name="ChromeBrowserTest">
+	<parameter name = "browser" value = "chrome" />
+		<classes>
+			<class name="com.crm.qa.testcases.WebDriverManagerDemo" />			
+		</classes>
+	</test>
+	
+	<test name="IEBrowserTest">
+	<parameter name = "browser" value = "IE" />
+		<classes>
+			<class name="com.crm.qa.testcases.WebDriverManagerDemo" />			
+		</classes>
+	</test>
+
+	
+	
+
+</suite>
